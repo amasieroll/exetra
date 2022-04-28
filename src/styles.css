@@ -1,1 +1,185 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: "Work Sans";
+    src: local("Work Sans"), url(./assets/fonts/WorkSans-VariableFont_wght.ttf) format("truetype");
+}
+
+body {
+    font-family: "Work Sans";
+    color: #000000;
+    margin: 0px;
+    
+    
+}
+
+.default-regular{
+    
+    font-size: 16px; 
+    line-height: 23.68px; 
+    
+}
+
+
+.regular {
+    font-weight: 400;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.uppercase {
+    text-transform: uppercase;
+
+}
+
+.underline {
+    text-decoration: underline;
+
+}
+
+.default {
+    font-size: 16px; 
+    line-height: 23.68px; 
+}
+.large{
+    font-size: 18px; 
+    line-height: 26.64px; 
+}
+
+.center {
+    text-align: center;
+}
+
+.small{
+    font-size: 14px; 
+    line-height: 20.72px; 
+}
+
+
+.title {
+    color: #004763;
+}
+.display {
+font-size: 48px;
+font-weight: 700;
+line-height: 114%;
+
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 47.2px;
+
+}
+
+h2{
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 35.4px;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28.8px;
+}
+
+h4{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24.8px;
+}
+
+h5{
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 17.76px;
+}
+/* BUTTONS  */
+.button {
+    font-size: 14px;
+    line-height: 21px;
+    text-align: left;
+}
+
+/* CAPTIONS  */
+.caption {
+    font-size: 12px;
+    line-height: 16px;
+    text-align: left;
+}
+
+
+/* MENU  */
+
+.menu-title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.32px;
+    color: #2F7C9A
+}
+.menu-item{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.08px;
+    color: #000000;
+}
+
+/* COLORS  */
+
+.primary-900 {color: #7A2B07}
+.primary-700 {color: #B94009}
+.primary-500 { color: #E9510D}
+.primary-300 { color: #FF8B4D}
+.primary-100 { color: #FFD1BC}
+
+.secondary-900 {color: #002432;}
+.secondary-700 {color: #003144;}
+.secondary-600 {color: #003E57;}
+.secondary-500 {color: #004763;}
+.secondary-300 {color: #2F7C9A;}
+.secondary-100 {color: #69AAC3;}
+.secondary-50 {color: #8EBFD2;}
+.secondary-25 {color: #C5DEE8;}
+
+.tertiary-900 {color: #8695A5;}
+.tertiary-700 {color: #A1AFBD;}
+.tertiary-500 {color: #BCCAD8;}
+.tertiary-300 {color: #DCE3EA;}
+.tertiary-100 {color: #F2F4F7;}
+
+.neutral-900{color: #000000;}
+.neutral-700{color: #494F51;}
+.neutral-500{color: #77878B;}
+.neutral-300{color: #A5B1B5;}
+.neutral-100{color: #FFFFFF;}
+
+.danger-800 { color: #8F0F0F;}
+.danger-700 { color: #B71C1C;}
+.danger-500 { color: #F44336;}
+.danger-400 { color: #F88981;}
+.danger-100 { color: #FFCFCF;}
+.warning-800 { color: #BB8602;}
+.warning-700 { color: #E5A70C;}
+.warning-500 { color: #FBC02D;}
+.warning-300 { color: #FFE082;}
+.warning-100 { color: #FFF2D0;}
+.success-800 { color: #007041;}
+.success-700 { color: #00A15E;}
+.success-500 { color: #00C773;}
+.success-300 { color: #94EBC7;}
+.success-100 { color: #DEFFF1;}
+.info-800 { color: #01669D;}
+.info-700 { color: #0288D1;}
+.info-500 { color: #29B6F6;}
+.info-100 { color: #B3E5FC;}
+
+
+

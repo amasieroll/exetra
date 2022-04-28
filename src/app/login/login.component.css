@@ -1,0 +1,17 @@
+.container-wrapper {
+    background-image: url('../../assets/images/login.jpg');
+    height: 100vh;
+    background-repeat: round;
+}
+
+.form-container {
+    width: 600px;
+    height: 331px;
+    background-color: green;
+}
+
+.container{
+    background-color: rgba(0, 62, 87, 0.8);
+    opacity: 80%;
+    height: 100vh;
+}

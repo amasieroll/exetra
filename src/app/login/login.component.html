@@ -1,0 +1,45 @@
+<div class="container-wrapper">
+    <div class="container">
+    <div class="form-container">
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <div class="row">
+                <h2 class="medium neutral-100 center">Benvenuto in Exetra</h2>
+                
+            </div>
+            <div class="row">
+                <p class="regular neutral-100 center">
+                    Inserisci le tue credenziali per entrare nella tua area personale.
+                </p>
+            </div>
+            <div class="row">
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Nome utente:</mat-label>
+                    <input matInput placeholder="Nome utente" formControlName="user" required>
+                  </mat-form-field>
+                <!-- <label for="first-name"></label>
+                <input id="first-name" type="text" > -->
+            </div>
+            <div class="row">
+                
+            <label for="last-name">Password</label>
+            <input id="last-name" type="text" formControlName="password" required>
+            </div>
+            
+                    
+          
+            <p>Complete the form to enable button.</p>
+            <button type="submit" [disabled]="!loginForm.valid">Submit</button>
+          </form>
+          
+          <hr>
+          
+          <p>Form Value: {{ loginForm.value | json }}</p>
+          
+          <p>Form Status: {{ loginForm.status }}</p>
+    </div>
+    
+      </div>
+</div>
+
+
+  

@@ -41,10 +41,10 @@ export class LoginComponent implements OnInit {
   }
   ngOnInit(): void {
 
-    // this.mainService.getInfo().subscribe(x=> {
-    //   debugger;
-    //   console.log(x)
-    // })
+    this.mainService.getInfo().subscribe(x=> {
+      debugger;
+      console.log(x)
+    })
     }
 
 

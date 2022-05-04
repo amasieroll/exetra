@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class MainService {
-  private url = 'https://randomuser.me/api';
+  private url = 'http://exmisrv03:85/REST/RESTProvider_BusinessFunctions.aspx?FunctionName=UserAgenda&start=2022-05-04&end=2022-05-05&_=1651672435659&id=55';
   constructor(private http : HttpClient) { }
 
   getInfo(): Observable<any> {

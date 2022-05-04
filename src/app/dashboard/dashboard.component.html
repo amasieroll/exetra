@@ -1,1 +1,29 @@
-<p>dashboard works!</p>
+
+<ng-container *ngIf="!rightMenu">
+    <app-topbar [user]="userName"></app-topbar>
+    <div class="dashboard-wrapper">
+        <div class="row">
+            <div class="col-2">
+                <app-side-menu></app-side-menu>  
+    
+            </div>
+            <div class="col-10">
+                <div class="row menu-button">
+                    <div class="col-11">
+            
+                    </div>
+                    <div class="col-1">
+                            <button class="btn btn-rounded btn-open-menu btn-large blue" (click)="showMenu()"></button>
+                            
+            
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    
+    </div>
+</ng-container>
+<ng-container *ngIf="rightMenu">
+    <app-fullscreen-menu (hideMenuEvent)="showDashboard($event)"></app-fullscreen-menu>
+</ng-container>

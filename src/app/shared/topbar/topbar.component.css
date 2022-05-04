@@ -1,0 +1,49 @@
+.logo {
+    height: 48px;
+    width: 92px;
+    top: 16px;
+    left: 38px;
+    position: relative;
+}
+
+.header {
+    height: 80px;
+}
+
+.single-item {
+    width: 73px;
+    height: 80px;
+    border-left: 1px solid #F2F4F7;
+}
+.account-container{
+    height: 80px;
+    border-left: 1px solid #F2F4F7;
+}
+
+.items{
+    width: 321px;
+}
+
+.col-md-logo{
+    width: 177px;
+    border-right: 1px solid #F2F4F7;
+}
+
+.icon {
+    top: 30%;
+    position: relative;
+    left: 30%;
+}
+
+.icon-search {
+    top: 30%;
+    position: relative;
+}
+
+.user-account {
+    padding-top: 24px;
+}
+
+.header-bar {
+    border-bottom: 1px solid #F2F4F7
+}

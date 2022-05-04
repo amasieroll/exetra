@@ -1,45 +1,87 @@
 <div class="container-wrapper">
-    <div class="container">
-    <div class="form-container">
-        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-            <div class="row">
-                <h2 class="medium neutral-100 center">Benvenuto in Exetra</h2>
-                
-            </div>
-            <div class="row">
-                <p class="regular neutral-100 center">
-                    Inserisci le tue credenziali per entrare nella tua area personale.
-                </p>
-            </div>
-            <div class="row">
-                <mat-form-field class="example-full-width" appearance="fill">
-                    <mat-label>Nome utente:</mat-label>
-                    <input matInput placeholder="Nome utente" formControlName="user" required>
-                  </mat-form-field>
-                <!-- <label for="first-name"></label>
-                <input id="first-name" type="text" > -->
-            </div>
-            <div class="row">
-                
-            <label for="last-name">Password</label>
-            <input id="last-name" type="text" formControlName="password" required>
-            </div>
-            
-                    
-          
-            <p>Complete the form to enable button.</p>
-            <button type="submit" [disabled]="!loginForm.valid">Submit</button>
-          </form>
-          
-          <hr>
-          
-          <p>Form Value: {{ loginForm.value | json }}</p>
-          
-          <p>Form Status: {{ loginForm.status }}</p>
+    <div class="wrapper">
+        <div class="form-container">
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                <div class="row">
+                    <h2 class="medium neutral-100 center">Benvenuto in Exetra</h2>
+
+                </div>
+                <div class="row">
+                    <div class="col-2">
+
+                    </div>
+                    <div class="col-8">
+                        <p class="regular neutral-100 center">
+                            Inserisci le tue credenziali per entrare nella tua area personale.
+                        </p>
+                    </div>
+                    <div class="col-2">
+
+                    </div>
+
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-2">
+
+                    </div>
+                    <div class="col-8 center">
+                        <input class="login-form user" [ngClass]="userError== true ? 'danger' :''"
+                            formControlName="user" placeholder="Nome utente" (focusout)="checkValid('user')">
+                        <p *ngIf="userError" class="caption medium danger-500 pl-1">Inserire Nome Utente</p>
+                    </div>
+                    <div class="col-2">
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-2">
+
+                    </div>
+                    <div class="col-8 center">
+                        <input type="password" class="login-form password"
+                            [ngClass]="passwordError== true ? 'danger' :''" formControlName="password"
+                            placeholder="Password" (focusout)="checkValid('password')" />
+                        <p *ngIf="passwordError" class="caption medium danger-500 pl-1">Inserire Password</p>
+
+                    </div>
+                    <div class="col-2">
+
+                    </div>
+
+
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-2">
+
+                    </div>
+                    <div class="col-8 center">
+                        <button type="submit" class="btn login" [disabled]="!loginForm.valid">LOGIN</button>
+                        <p *ngIf="loginError" class="caption medium danger-500 pl-1">Credenziali non valide</p>
+
+                    </div>
+                    <div class="col-2">
+
+                    </div>
+
+                </div>
+
+
+
+
+                <p>Complete the form to enable button.</p>
+                <button type="submit" [disabled]="!loginForm.valid">Submit</button>
+            </form>
+
+            <hr>
+
+            <p>Form Value: {{ loginForm.value | json }}</p>
+
+            <p>Form Status: {{ loginForm.status }}</p>
+        </div>
+
     </div>
-    
-      </div>
 </div>
-
-
-  

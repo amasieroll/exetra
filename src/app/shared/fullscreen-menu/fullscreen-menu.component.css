@@ -1,0 +1,14 @@
+.fullscreen-menu {
+    height: 100vh;
+    width: 100vw;
+    background-color: #003144;
+}
+
+.menu-wrap{
+    height: 80px;
+}
+
+.menu-button{
+    padding-top: 80px;
+}
+

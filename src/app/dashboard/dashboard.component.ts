@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-
+  userName = 'Nome Cognome';
+  rightMenu = false;
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  showMenu(){
+    this.rightMenu = true;
+  }
+
+  showDashboard(event: any){
+    console.log(event)
+    this.rightMenu = event;
+  }
 }

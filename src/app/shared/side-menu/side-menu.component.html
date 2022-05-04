@@ -1,0 +1,6 @@
+<div class="left-menu">
+<div class="row" *ngFor="let card of cards, let i = index">
+    <app-menu-card [img]="card.img" [label]="card.label" [selected]="card.selected" (click)="selectCard(card)"></app-menu-card>
+</div>
+   
+    </div>

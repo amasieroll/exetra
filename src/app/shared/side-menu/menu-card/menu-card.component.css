@@ -1,0 +1,30 @@
+.card {
+    width: 164px;
+    height: 84px;
+    border-bottom: 1px solid #2F7C9A;
+    border-radius: 0px;
+    background-color: #004763;
+    cursor: pointer;
+}
+
+.inner-card {
+   padding: 26px 16px 16px 12px}
+
+.card-label {
+    padding-left: 10px;
+}
+
+.card:hover {
+    background-color: #003144;
+    border-left: 4px solid #69AAC3;
+}
+
+.card-selected {
+    border-left: 4px solid #E9510D;
+    background-color: #003E57;
+    width: 164px;
+    height: 84px;
+    border-bottom: 1px solid #2F7C9A;
+    border-radius: 0px;
+    
+}
